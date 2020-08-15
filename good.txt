@@ -2,4 +2,8 @@
 将文件工作区域的内容提交到暂存区域(statg) git add 文件名
 将工作区域内容提交到分支版本区域 git commit -m"文件描述信息"
 git status  
-git diff 文件名
+查看最近的更改 git diff 文件名
+查看最近的操作日志 git log --pretty=oneline   查看所有提交记录git reflog
+回退以前的操作 git reset --hard 版本号前7位或前九位
+
+撤回操作，只在工作区域没提交的时候有用 Git restore 文件名
