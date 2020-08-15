@@ -6,4 +6,13 @@ git status
 查看最近的操作日志 git log --pretty=oneline   查看所有提交记录git reflog
 回退以前的操作 git reset --hard 版本号前7位或前九位
 
-撤回操作，只在工作区域没提交的时候有用 Git restore 文件名
+撤回工作区域没提交的时候有用 Git restore 文件名
+撤回暂存区域文件 Git restore --staged 文件名
+
+删除分支 git rm 文件名  ，删除了后再次commit提交
+
+本地仓库连接远程仓库 git remote add origin（仓库名字） 仓库的SSh
+创建sshkey  ssh-keygen -t rsa -C "自己的邮箱"
+查看自己的sshkey  cat ~/.ssh/id_rsa.pub 然后进入GitHub设置settings添加sshkey newkey
+将本地推送到远程仓库 git push origin（仓库名字） master
+下载远程的仓库的文件 git clone 仓库https路径
