@@ -1,3 +1,5 @@
+测试good
+
 创建git工作区域  git init
 将文件工作区域的内容提交到暂存区域(statg) git add 文件名
 将工作区域内容提交到分支版本区域 git commit -m"文件描述信息"
@@ -16,3 +18,4 @@ git status
 查看自己的sshkey  cat ~/.ssh/id_rsa.pub 然后进入GitHub设置settings添加sshkey newkey
 将本地推送到远程仓库 git push origin（仓库名字） master
 下载远程的仓库的文件 git clone 仓库https路径
+
