@@ -1,2 +1,5 @@
 创建git工作区域  git init
-将文件工作区域的内容提交到暂存区域 git add 文件名
+将文件工作区域的内容提交到暂存区域(statg) git add 文件名
+将工作区域内容提交到分支版本区域 git commit -m"文件描述信息"
+git status  
+git diff 文件名
