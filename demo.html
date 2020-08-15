@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            width: 300px;
+            height: 300px;
+            margin: auto;
+        }
+        .hover{
+            color:red;
+        }
+        .hover:hover{
+            font-size: 28px;
+            color: aqua;
+        }
+        .none{
+            display: none;
+        }
+        .block{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="hover">LIKE</li>
+        <li class="none other">background</li>
+        <li class="hover">SEX</li>
+        <li class="none other" >boy</li>
+        <li class="hover">AGE</li>
+        <li class="none other">18</li>
+    </ul>
+
+    <script>
+        let li = document.querySelectorAll(".hover"),
+            li2 = document.querySelectorAll(".other"),
+            num = 0;
+        li.forEach((item,index)=>{
+            item.onclick = () =>{
+                li2[num].className = "none"
+                num = index
+                console.log(li2[num].className.indexOf("block"));
+                if(li2[num].className.indexOf("block") >=0){
+                    li2[num].className = "none"
+                }else{
+                    li2[num].className = "block"
+                }
+                // li2[num].className = "none"
+                // li2[index].className = "block"
+                // num = index
+                
+            }
+           
+        })
+    </script>
+    
+</body>
+</html>
